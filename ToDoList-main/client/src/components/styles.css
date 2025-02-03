@@ -1,0 +1,105 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Gray background for the entire body */
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white; /* White background for the Todo List container */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 400px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button.complete {
+  background-color: #28a745; /* Green */
+}
+
+button.complete:hover {
+  background-color: #218838;
+}
+
+button.undo {
+  background-color: #007bff; /* Blue */
+}
+
+button.undo:hover {
+  background-color: #0056b3;
+}
+
+button.delete {
+  background-color: #dc3545; /* Light Red */
+}
+
+button.delete:hover {
+  background-color: #c82333;
+}
+
+/* Styles for the Todo List container */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Increase border radius for more rounded corners */
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #888; /* Light grey color for completed tasks */
+}
+
+/* Button styles */
+button.add {
+  background-color: black; /* Black background */
+  color: white; /* White text color */
+}
+
+button.add:hover {
+  background-color: #333; /* Darker shade on hover */
+}
